@@ -2,6 +2,7 @@ import React, { Component } from 'react'
 import './Navbar.css'
 import {Link} from "react-router-dom"
 
+
 export class Navbar extends Component {
  
   render() {
@@ -9,8 +10,9 @@ export class Navbar extends Component {
     return (
       <div>
         <nav className='navbar'>
-          <div className='logo'>
-            Movflix.
+          <div className='container-logo'>
+            <img src='https://imgur.com/undefined' alt='logo 'className='logo' />
+            <span>Movflix</span>
           </div>
           <ul className='nav-links'>
             <li>
@@ -24,6 +26,10 @@ export class Navbar extends Component {
             </li>
         
           </ul>
+          <div className='container'>
+          <button className='btn'>Sign Up</button>
+          <button className='btn'>Sign In</button>
+          </div>
           
 
         </nav>
