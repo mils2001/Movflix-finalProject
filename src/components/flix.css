@@ -25,6 +25,7 @@ body {
   /* Search Bar */
   .search-bar {
     margin-bottom: 20px;
+    display: flex;
   }
   
   .search-bar input {
@@ -49,8 +50,8 @@ body {
     background-color: #218838;
     color: #fff;
     cursor: pointer;
-    float: inline-start;
-    
+    justify-content: left;
+    top: 30%;
 
   }
   
