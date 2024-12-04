@@ -27,6 +27,10 @@
     color: #218838;
 
   }
+  title:hover{
+    background-color: goldenrod;
+    color: #000;
+  }
   
   .nav-links {
     display: flex;
