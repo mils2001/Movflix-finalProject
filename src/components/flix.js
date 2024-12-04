@@ -60,12 +60,17 @@ function Flix() {
 
       {/* Search Bar */}
       <div className="search-bar">
+    
         <input
           type="text"
           placeholder="Search for a movie..."
           value={searchQuery}
           onChange={(e) => setSearchQuery(e.target.value)}
+        
+          
         />
+         <button className="btn">Search</button>
+    
       </div>
 
       {/* Movie List */}
