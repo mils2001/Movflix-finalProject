@@ -1,6 +1,7 @@
 import './App.css';
 import React, {BrowserRouter,Routes,Route} from "react-router-dom"
 import Navbar from './components/Navbar'
+import Flix from './components/flix';
 
 
 
@@ -9,8 +10,9 @@ function App() {
     <div className="App">
       <BrowserRouter>
       <Navbar/>
+      <Flix/>
       <Routes>
-        
+      
       </Routes>
       </BrowserRouter>
     

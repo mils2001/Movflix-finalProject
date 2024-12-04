@@ -1,0 +1,193 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f8f8;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Ensure body takes up at least the full height */
+  }
+  
+  /* Flix App Layout */
+  .flix-app {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    box-sizing: border-box;
+    max-width: 1200px;
+    margin: 0 auto;
+    width: 100%;
+  }
+  
+  /* Search Bar */
+  .search-bar {
+    margin-bottom: 20px;
+  }
+  
+  .search-bar input {
+    padding: 10px;
+    font-size: 16px;
+    width: 100%;
+    max-width: 500px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  /* Movie List */
+  .movie-list {
+    display: flex;
+    flex-wrap: wrap; /* Allow cards to wrap into next line */
+    justify-content: center; /* Center align the cards */
+    gap: 20px;
+    margin-top: 20px;
+    width: 100%;
+  }
+  
+  /* Movie Card */
+  .movie-card {
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 15px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: calc(33.33% - 20px); /* Set each card to take up 1/3 of the row */
+    box-sizing: border-box;
+    margin-bottom: 20px;
+  }
+  
+  .movie-card img {
+    width: 100%;
+    border-radius: 5px;
+    margin-bottom: 10px;
+  }
+  
+  .movie-card h3 {
+    font-size: 18px;
+    margin: 0;
+  }
+  
+  .movie-card p {
+    font-size: 14px;
+    color: #555;
+  }
+  
+  .movie-card .btn {
+    background-color: #28a745;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    font-size: 14px;
+    cursor: pointer;
+    border-radius: 5px;
+    width: 100%;
+    margin-top: 10px;
+  }
+  
+  .movie-card .btn:hover {
+    background-color: #218838;
+  }
+  
+  /* Alert Message */
+  .alert {
+    background-color: #28a745;
+    color: white;
+    padding: 15px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    width: 100%;
+    max-width: 1200px;
+  }
+  
+  /* Payment Popup */
+  .popup-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .popup {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    width: 400px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .popup h3 {
+    margin-bottom: 20px;
+  }
+  
+  .popup form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .popup label {
+    margin-bottom: 5px;
+    font-weight: bold;
+  }
+  
+  .popup select,
+  .popup input {
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  .popup .btn-submit {
+    background-color: #28a745;
+    color: white;
+    padding: 10px;
+    border: none;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .popup .btn-submit:hover {
+    background-color: #218838;
+  }
+  
+  .popup .close-btn {
+    background-color: #dc3545;
+    color: white;
+    padding: 10px;
+    border: none;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+  }
+  
+  .popup .close-btn:hover {
+    background-color: #c82333;
+  }
+  
+  /* Footer */
+  .footer {
+    background-color: #222;
+    color: white;
+    padding: 15px;
+    text-align: center;
+    width: 100%;
+    position: relative;
+    bottom: 0;
+    margin-top: auto;
+  }
+  
+  .footer span {
+    font-size: 14px;
+  }
+  
+  
+  

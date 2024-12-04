@@ -1,15 +1,18 @@
-import React, { Component } from 'react'
+import React, { Component,} from 'react'
 import './Navbar.css'
 import {Link} from "react-router-dom"
 
 
 export class Navbar extends Component {
+
+
  
   render() {
   
     return (
       <div>
         <nav className='navbar'>
+        
           <div className='container-logo'>
             <img src='https://imgur.com/undefined' alt='logo 'className='logo' />
             <span>Movflix</span>
