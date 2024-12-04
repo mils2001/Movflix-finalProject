@@ -39,7 +39,7 @@ function Flix() {
       `You purchased "${selectedMovie.title}" using ${paymentMethod}! Phone Number: ${phoneNumber}`
     );
     setIsPaymentPopupVisible(false);
-    setTimeout(() => setAlertMessage(""), 3000);
+    setTimeout(() => setAlertMessage(""), 8000);
     setPhoneNumber("");
     setPaymentMethod("");
   };

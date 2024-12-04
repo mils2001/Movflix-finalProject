@@ -16,7 +16,7 @@ export class Navbar extends Component {
         
           <div className='container-logo'>
             <img src='https://i.imgur.com/lncSbip.jpeg' alt='logo 'className='logo' />
-            <span>Movflix</span>
+            <span className='title'>Movflix</span>
           </div>
           <ul className='nav-links'>
             <li>
