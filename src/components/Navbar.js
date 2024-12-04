@@ -3,6 +3,7 @@ import './Navbar.css'
 import {Link} from "react-router-dom"
 
 
+
 export class Navbar extends Component {
 
 
@@ -14,7 +15,7 @@ export class Navbar extends Component {
         <nav className='navbar'>
         
           <div className='container-logo'>
-            <img src='https://imgur.com/undefined' alt='logo 'className='logo' />
+            <img src='https://i.imgur.com/lncSbip.jpeg' alt='logo 'className='logo' />
             <span>Movflix</span>
           </div>
           <ul className='nav-links'>
