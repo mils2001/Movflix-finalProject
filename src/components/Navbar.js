@@ -67,13 +67,13 @@ export class Navbar extends Component {
           </div>
           <ul className='nav-links'>
             <li>
-              <Link to='/Home'>Home</Link>
+              <Link to='./Pages/Home.js'>Home</Link>
             </li>
             <li>
-              <Link to='/About'>About</Link>
+              <Link to='./Pages/About.js'>About</Link>
             </li>
             <li>
-              <Link to='/Contact'>Contact</Link>
+              <Link to='./Pages/Contact.js'>Contact</Link>
             </li>
           </ul>
           <div className='container'>
