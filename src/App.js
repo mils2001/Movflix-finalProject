@@ -4,6 +4,7 @@ import Navbar from './components/Navbar'
 import Flix from './components/flix';
 import Home from './components/Pages/Home'
 import About from './components/Pages/About'
+import Layout  from './components/Pages/Layout';
 
 
 
@@ -14,8 +15,10 @@ function App() {
       <Navbar/>
       <Flix/>
       <Routes>
-      <Route path="/" element={<Home />} />
+      <Route path="/" element={<Layout />} />
+      <Route index element={<Home/>}/>
       <Route path="/about" element={<About />} />
+      
       </Routes>
       </BrowserRouter>
     
