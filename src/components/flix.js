@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import './flix.css'
 
-const API_URL = "http://localhost:3000/films";
+const API_URL = "http://localhost:3002/films";
 
 function Flix() {
   const [movieList, setMovieList] = useState([]);

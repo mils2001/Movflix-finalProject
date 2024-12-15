@@ -14,12 +14,7 @@ function App() {
       <BrowserRouter>
       <Navbar/>
       <Flix/>
-      <Routes>
-      <Route path="/" element={<Layout />} />
-      <Route path='./components/flix.js' element={<Home/>}/>
-      <Route path="/about" element={<About />} />
-
-      </Routes>
+      
       </BrowserRouter>
     
     </div>
