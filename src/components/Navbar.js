@@ -1,6 +1,9 @@
 import React, { Component } from 'react';
 import './Navbar.css';
-import { Link } from "react-router-dom";
+import { Routes, Route } from "react-router-dom";
+import Home from './Pages/Home'
+import About from './Pages/About'
+import Contact from './Pages/Contact';
 
 export class Navbar extends Component {
 
@@ -65,17 +68,12 @@ export class Navbar extends Component {
             <img src='https://i.imgur.com/lncSbip.jpeg' alt='logo' className='logo' />
             <span className='title'>Movflix</span>
           </div>
-          <ul className='nav-links'>
-            <li>
-              <Link to='./Pages/Home.js'>Home</Link>
-            </li>
-            <li>
-              <Link to='./Pages/About.js'>About</Link>
-            </li>
-            <li>
-              <Link to='./Pages/Contact.js'>Contact</Link>
-            </li>
-          </ul>
+          <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/about" element={<About />} />
+          <Route path="/contact" element={<Contact />} />
+
+          </Routes>
           <div className='container'>
             <button className='btn' onClick={this.toggleSignUpPopup}>Sign Up</button>
             <button className='btn' onClick={this.toggleSignInPopup}>Sign In</button>
