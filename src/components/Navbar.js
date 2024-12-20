@@ -1,12 +1,8 @@
-import React, { Component } from 'react';
-import './Navbar.css';
-import { Routes, Route } from "react-router-dom";
-import Home from './Pages/Home'
-import About from './Pages/About'
-import Contact from './Pages/Contact';
+import React, { Component } from "react";
+import "./Navbar.css";
+import { Link } from "react-router-dom";
 
 export class Navbar extends Component {
-
   constructor(props) {
     super(props);
     this.state = {
@@ -60,26 +56,37 @@ export class Navbar extends Component {
 
   render() {
     const { isSignUpPopupVisible, isSignInPopupVisible, signUpDetails, signInDetails } = this.state;
-  
+
     return (
       <div>
-        <nav className='navbar'>
-          <div className='container-logo'>
-            <img src='https://i.imgur.com/lncSbip.jpeg' alt='logo' className='logo' />
-            <span className='title'>Movflix</span>
+        <nav className="navbar">
+          <div className="container-logo">
+            <img
+              src="https://i.imgur.com/lncSbip.jpeg"
+              alt="logo"
+              className="logo"
+            />
+            <span className="title">Movflix</span>
           </div>
-          <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/about" element={<About />} />
-          <Route path="/contact" element={<Contact />} />
 
-          </Routes>
-          <div className='container'>
-            <button className='btn' onClick={this.toggleSignUpPopup}>Sign Up</button>
-            <button className='btn' onClick={this.toggleSignInPopup}>Sign In</button>
+          {/* Navigation Links */}
+          <div className="links">
+            <Link to="/">Home</Link>
+            <Link to="/about">About</Link>
+            <Link to="/contact">Contact</Link>
+          </div>
+
+          <div className="container">
+            <button className="btn" onClick={this.toggleSignUpPopup}>
+              Sign Up
+            </button>
+            <button className="btn" onClick={this.toggleSignInPopup}>
+              Sign In
+            </button>
           </div>
         </nav>
 
+        {/* Sign-Up Popup */}
         {isSignUpPopupVisible && (
           <div className="popup-overlay">
             <div className="popup">
@@ -107,12 +114,15 @@ export class Navbar extends Component {
                   onChange={this.handleSignUpChange}
                 />
                 <button type="submit">Submit</button>
-                <button type="button" onClick={this.toggleSignUpPopup}>Close</button>
+                <button type="button" onClick={this.toggleSignUpPopup}>
+                  Close
+                </button>
               </form>
             </div>
           </div>
         )}
 
+        {/* Sign-In Popup */}
         {isSignInPopupVisible && (
           <div className="popup-overlay">
             <div className="popup">
@@ -133,15 +143,17 @@ export class Navbar extends Component {
                   onChange={this.handleSignInChange}
                 />
                 <button type="submit">Submit</button>
-                <button type="button" onClick={this.toggleSignInPopup}>Close</button>
+                <button type="button" onClick={this.toggleSignInPopup}>
+                  Close
+                </button>
               </form>
             </div>
           </div>
         )}
-
       </div>
     );
   }
 }
 
 export default Navbar;
+
