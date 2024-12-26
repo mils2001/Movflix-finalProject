@@ -71,9 +71,9 @@ export class Navbar extends Component {
 
           {/* Navigation Links */}
           <div className="links">
-            <Link to="/">Home</Link>
-            <Link to="/about">About</Link>
-            <Link to="/contact">Contact</Link>
+            <Link to="./Pages/Home.js">Home</Link>
+            <Link to="./Pages/About.js">About</Link>
+            <Link to="./Pages/Contact.js">Contact</Link>
           </div>
 
           <div className="container">
