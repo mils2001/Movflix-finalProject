@@ -70,8 +70,8 @@ export class Navbar extends Component {
           </div>
 
           {/* Navigation Links */}
-          <div className="links">
-            <Link to="./Pages/Home.js">Home</Link>
+          <div className="nav-links">
+            <Link to="./flix.js">Home</Link>
             <Link to="./Pages/About.js">About</Link>
             <Link to="./Pages/Contact.js">Contact</Link>
           </div>
