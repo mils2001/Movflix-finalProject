@@ -1,10 +1,10 @@
 import React from 'react'
-import flix from './flix'
+import Flix from './flix'
 
 function Home() {
   return (
     <div>
-      <flix/>
+      <Flix/>
     </div>
   )
 }
