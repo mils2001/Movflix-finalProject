@@ -1,7 +1,7 @@
 import React from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Navbar from "./components/Navbar";
-import Flix from './components/flix'
+import Flix from './components/Pages/flix'
 import Home from "./components/Pages/Home";
 import About from "./components/Pages/About";
 import Contact from "./components/Pages/Contact";
