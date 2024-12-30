@@ -1,9 +1,10 @@
 import React from 'react'
+import flix from './flix'
 
 function Home() {
   return (
     <div>
-      const Home =() = <h1>welcome to home page.</h1>
+      <flix/>
     </div>
   )
 }
