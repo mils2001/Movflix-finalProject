@@ -87,7 +87,7 @@ function Flix() {
             </div>
           ))
         ) : (
-          <p>No movies found.</p>
+          <p>No Movies Found Please Reload The Page Or Kindly Check Your Internet Connection.</p>
         )}
       </div>
 
