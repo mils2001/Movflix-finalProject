@@ -2,7 +2,11 @@ import React from 'react'
 
 function About() {
   return (
-    <div>About</div>
+    <div>
+      <span>
+        Movflix254@gmail.com
+      </span>
+    </div>
   )
 }
 
